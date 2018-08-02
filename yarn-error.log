@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Stef\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add semantic-ui-react
+  C:\Program Files\nodejs\node.exe C:\Users\Stef\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-full-page
 
 PATH: 
-  C:\Users\Stef\Documents\websites\portfolio\node_modules\.bin;C:\Users\Stef\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\Stef\Documents\websites\portfolio\node_modules\.bin;C:\Users\Stef\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\Stef\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\Stef\AppData\Local\Microsoft\WindowsApps;C:\Users\Stef\AppData\Local\GitHubDesktop\bin;C:\Users\Stef\AppData\Roaming\npm
+  C:\Users\Stef\Documents\websites\myResume\node_modules\.bin;C:\Users\Stef\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\Stef\Documents\websites\myResume\node_modules\.bin;C:\Users\Stef\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\Stef\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\Stef\AppData\Local\Microsoft\WindowsApps;C:\Users\Stef\AppData\Local\GitHubDesktop\bin;C:\Users\Stef\AppData\Roaming\npm
 
 Yarn version: 
   1.9.2
@@ -14,16 +14,16 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\Stef\Documents\websites\portfolio\node_modules\babel-core\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Stef\Documents\websites\myResume\node_modules\babel-generator\node_modules\.bin'
 
 npm manifest: 
   {
-    "name": "react-modele",
+    "name": "myResume",
     "version": "0.1.0",
-    "description": "Point de départ des projets React",
+    "description": "My resume",
     "main": "index.js",
     "repository": "git@github.com:O-clock-Hyperspace/React-modele.git",
-    "author": "Jean-Denis Vauguet <jd@vauguet.fr>",
+    "author": "Stéphane Lanter <stephane@lanteri.fr>",
     "license": "MIT",
     "private": false,
     "devDependencies": {
@@ -49,11 +49,12 @@ npm manifest:
       "babel-polyfill": "^6.26.0",
       "prop-types": "^15.6.1",
       "react": "^16.4.0",
-      "react-bulma-components": "1.5.0",
       "react-dom": "^16.4.0",
-      "react-full-page": "^0.1.5",
       "react-redux": "^5.0.7",
-      "redux": "^4.0.0"
+      "react-router": "^4.3.1",
+      "react-router-dom": "^4.3.1",
+      "redux": "^4.0.0",
+      "semantic-ui-react": "^0.82.1"
     },
     "scripts": {
       "start": "parcel src/index.html",
@@ -113,6 +114,13 @@ Lockfile:
       chalk "^2.0.0"
       esutils "^2.0.2"
       js-tokens "^3.0.0"
+  
+  "@babel/runtime@^7.0.0-beta.49":
+    version "7.0.0-beta.55"
+    resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.0.0-beta.55.tgz#0bc33aa5a6ac0b012f37e25b9e6aaa2e489a916b"
+    dependencies:
+      core-js "^2.5.7"
+      regenerator-runtime "^0.12.0"
   
   "@babel/template@7.0.0-beta.44":
     version "7.0.0-beta.44"
@@ -1128,10 +1136,6 @@ Lockfile:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   
-  bulma@0.7.1:
-    version "0.7.1"
-    resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.1.tgz#73c2e3b2930c90cc272029cbd19918b493fca486"
-  
   cache-base@^1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/cache-base/-/cache-base-1.0.1.tgz#0a7f46416831c8b662ee36fe4e7c59d76f666ab2"
@@ -1262,9 +1266,9 @@ Lockfile:
       isobject "^3.0.0"
       static-extend "^0.1.1"
   
-  classnames@2.2.5:
-    version "2.2.5"
-    resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+  classnames@^2.2.5:
+    version "2.2.6"
+    resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   
   cli-cursor@^2.1.0:
     version "2.1.0"
@@ -1428,7 +1432,7 @@ Lockfile:
     version "1.2.7"
     resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   
-  core-js@^2.4.0, core-js@^2.5.0:
+  core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.7:
     version "2.5.7"
     resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
   
@@ -2468,6 +2472,16 @@ Lockfile:
       inherits "^2.0.3"
       minimalistic-assert "^1.0.0"
   
+  history@^4.7.2:
+    version "4.7.2"
+    resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
+    dependencies:
+      invariant "^2.2.1"
+      loose-envify "^1.2.0"
+      resolve-pathname "^2.2.0"
+      value-equal "^0.4.0"
+      warning "^3.0.0"
+  
   hmac-drbg@^1.0.0:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -2604,7 +2618,7 @@ Lockfile:
       strip-ansi "^4.0.0"
       through "^2.3.6"
   
-  invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.2:
+  invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
     version "2.2.4"
     resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
     dependencies:
@@ -2894,6 +2908,10 @@ Lockfile:
     version "3.0.2"
     resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   
+  "js-tokens@^3.0.0 || ^4.0.0":
+    version "4.0.0"
+    resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  
   js-yaml@^3.10.0, js-yaml@^3.9.1:
     version "3.11.0"
     resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
@@ -2950,6 +2968,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.0.1.tgz#e801b1b39985e20fffc87b40e3748080e2dcac7f"
     dependencies:
       array-includes "^3.0.3"
+  
+  keyboard-key@^1.0.1:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/keyboard-key/-/keyboard-key-1.0.1.tgz#a946294fe59ad5431c63a3ea269f023e51fac6aa"
   
   kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
     version "3.2.2"
@@ -3054,7 +3076,7 @@ Lockfile:
     version "4.5.0"
     resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   
-  lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0:
+  lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0:
     version "4.17.10"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
   
@@ -3063,6 +3085,12 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
     dependencies:
       js-tokens "^3.0.0"
+  
+  loose-envify@^1.2.0:
+    version "1.4.0"
+    resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+    dependencies:
+      js-tokens "^3.0.0 || ^4.0.0"
   
   lru-cache@^3.2.0:
     version "3.2.0"
@@ -3660,6 +3688,12 @@ Lockfile:
     version "1.0.5"
     resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
   
+  path-to-regexp@^1.7.0:
+    version "1.7.0"
+    resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+    dependencies:
+      isarray "0.0.1"
+  
   path-type@^1.0.0:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -4143,13 +4177,6 @@ Lockfile:
       minimist "^1.2.0"
       strip-json-comments "~2.0.1"
   
-  react-bulma-components@1.5.0:
-    version "1.5.0"
-    resolved "https://registry.yarnpkg.com/react-bulma-components/-/react-bulma-components-1.5.0.tgz#eafbb2e7b4d5ff0b87908f7ec6bf2c51ea9c24a5"
-    dependencies:
-      bulma "0.7.1"
-      classnames "2.2.5"
-  
   react-dom@^16.4.0:
     version "16.4.0"
     resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
@@ -4158,10 +4185,6 @@ Lockfile:
       loose-envify "^1.1.0"
       object-assign "^4.1.1"
       prop-types "^15.6.0"
-  
-  react-full-page@^0.1.5:
-    version "0.1.5"
-    resolved "https://registry.yarnpkg.com/react-full-page/-/react-full-page-0.1.5.tgz#9892dfdf816bb9e4033b0c87d58b5b45f6982b80"
   
   react-redux@^5.0.7:
     version "5.0.7"
@@ -4173,6 +4196,29 @@ Lockfile:
       lodash-es "^4.17.5"
       loose-envify "^1.1.0"
       prop-types "^15.6.0"
+  
+  react-router-dom@^4.3.1:
+    version "4.3.1"
+    resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
+    dependencies:
+      history "^4.7.2"
+      invariant "^2.2.4"
+      loose-envify "^1.3.1"
+      prop-types "^15.6.1"
+      react-router "^4.3.1"
+      warning "^4.0.1"
+  
+  react-router@^4.3.1:
+    version "4.3.1"
+    resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.3.1.tgz#aada4aef14c809cb2e686b05cee4742234506c4e"
+    dependencies:
+      history "^4.7.2"
+      hoist-non-react-statics "^2.5.0"
+      invariant "^2.2.4"
+      loose-envify "^1.3.1"
+      path-to-regexp "^1.7.0"
+      prop-types "^15.6.1"
+      warning "^4.0.1"
   
   react@^16.4.0:
     version "16.4.0"
@@ -4267,6 +4313,10 @@ Lockfile:
     version "0.11.1"
     resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   
+  regenerator-runtime@^0.12.0:
+    version "0.12.0"
+    resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.0.tgz#8052ac952d85b10f3425192cd0c53f45cf65c6cb"
+  
   regenerator-transform@^0.10.0:
     version "0.10.1"
     resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.10.1.tgz#1e4996837231da8b7f3cf4114d71b5691a0680dd"
@@ -4351,6 +4401,10 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
   
+  resolve-pathname@^2.2.0:
+    version "2.2.0"
+    resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
+  
   resolve-url@^0.2.1:
     version "0.2.1"
     resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
@@ -4428,6 +4482,17 @@ Lockfile:
   sax@^1.2.4, sax@~1.2.1, sax@~1.2.4:
     version "1.2.4"
     resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+  
+  semantic-ui-react@^0.82.1:
+    version "0.82.1"
+    resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.82.1.tgz#fa779a20bad064ca7b333bc719dae120b795f740"
+    dependencies:
+      "@babel/runtime" "^7.0.0-beta.49"
+      classnames "^2.2.5"
+      keyboard-key "^1.0.1"
+      lodash "^4.17.10"
+      prop-types "^15.6.1"
+      shallowequal "^1.0.2"
   
   "semver@2 || 3 || 4 || 5", semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0:
     version "5.5.0"
@@ -4515,6 +4580,10 @@ Lockfile:
   shallow-copy@~0.0.1:
     version "0.0.1"
     resolved "https://registry.yarnpkg.com/shallow-copy/-/shallow-copy-0.0.1.tgz#415f42702d73d810330292cc5ee86eae1a11a170"
+  
+  shallowequal@^1.0.2:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   
   shebang-command@^1.2.0:
     version "1.2.0"
@@ -5062,6 +5131,10 @@ Lockfile:
       spdx-correct "^3.0.0"
       spdx-expression-parse "^3.0.0"
   
+  value-equal@^0.4.0:
+    version "0.4.0"
+    resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
+  
   vendors@^1.0.0:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.2.tgz#7fcb5eef9f5623b156bcea89ec37d63676f21801"
@@ -5075,6 +5148,18 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
     dependencies:
       indexof "0.0.1"
+  
+  warning@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+    dependencies:
+      loose-envify "^1.0.0"
+  
+  warning@^4.0.1:
+    version "4.0.1"
+    resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.1.tgz#66ce376b7fbfe8a887c22bdf0e7349d73d397745"
+    dependencies:
+      loose-envify "^1.0.0"
   
   wcwidth@^1.0.0:
     version "1.0.1"

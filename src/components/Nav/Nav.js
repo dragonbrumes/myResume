@@ -1,46 +1,30 @@
-import React, { Component } from "react";
-import { Navbar } from "react-bulma-components";
-import { Menu } from "semantic-ui-react";
+import React, { Component } from "react"
+import { Menu } from "semantic-ui-react"
+import { Link } from "react-router-dom"
 
-import "./nav.styl";
+import "./nav.styl"
 
-export default class Nav extends Component {
-  state = {};
+class Nav extends Component {
+  state = {}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+  // the state contain the active link
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name })
+  }
 
   render() {
-    const { activeItem } = this.state;
+    const { activeItem } = this.state
 
-    return (
-      <Menu text fixed="top" className="nav">
-        <Menu.Item
-          name="editorials"
-          active={activeItem === "editorials"}
-          content="Editorials"
-          onClick={this.handleItemClick}
-          className="nav-link"
-        />
-
-        <Menu.Item
-          name="reviews"
-          active={activeItem === "reviews"}
-          content="Reviews"
-          onClick={this.handleItemClick}
-          className="nav-link"
-        />
-
-        <Menu.Item
-          name="upcomingEvents"
-          active={activeItem === "upcomingEvents"}
-          content="Upcoming Events"
-          onClick={this.handleItemClick}
-          className="nav-link"
-        />
+    return <Menu text fixed="top" className="nav">
+        {/* Menu.Item is transform in a react-router Link with the as parameter and understand the to property  */}
+        <Menu.Item as={Link} to="/" name="Home" active={activeItem === "Home"} content="Home" onClick={this.handleItemClick} className="nav-link" />
+        <Menu.Item as={Link} to="/experiences" name="Experiences" active={activeItem === "Experiences"} content="Experiences" onClick={this.handleItemClick} className="nav-link" />
+        <Menu.Item name="upcomingEvents" active={activeItem === "upcomingEvents"} content="Upcoming Events" onClick={this.handleItemClick} className="nav-link" />
       </Menu>
-    );
   }
 }
+
+export default Nav
 
 // const Nav = () => (
 
