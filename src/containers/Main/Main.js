@@ -1,12 +1,12 @@
 import React, { Component } from "react"
 
-import MainContent from "~/components/MainContent/MainContent"
+import Home from "~/components/Home/Home"
 
 import "./main.styl"
 
 class Main extends Component {
   render() {
-    return <MainContent />
+    return <Home />
   }
 }
 

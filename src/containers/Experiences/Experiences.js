@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import Heading from "~/components/commons/Heading"
-import _ from "lodash"
-import { Transition } from "semantic-ui-react"
+import { Transition, Container } from "semantic-ui-react"
 
 import Experience from "../../components/Experience/Experience"
 import careerData from "../../datas/careerData"
@@ -10,8 +9,8 @@ import "./experiences.styl"
 
 class Experiences extends Component {
   render() {
+    // map on career datas and sended to the exp component
     const career = careerData.map(experience => (
-      // <div key={experience.company}>{experience.company}</div>
       <Experience
         key={experience.company}
         company={experience.company}
@@ -20,23 +19,20 @@ class Experiences extends Component {
         inCharge={experience.inCharge}
       />
     ))
-    // const exp = _.map(experiencesData, (value, key) => (
-    //   <div key={key}>{value[key]}</div>
-    // ))
 
     return (
-      <React.Fragment>
-        <Transition
-          animation="browse right"
-          transitionOnMount={true}
-          duration={1500}
-        >
-          <Heading tag="h1" className="exp-h1">
-            Career
-          </Heading>
-        </Transition>
-        {career}
-      </React.Fragment>
+      <Container>
+        <Heading tag="h1" className="exp-h1">
+          <Transition
+            animation="fade left"
+            transitionOnMount={true}
+            duration={1000}
+          >
+            <div>Career</div>
+          </Transition>
+        </Heading>
+        <div> {career} </div>
+      </Container>
     )
   }
 }

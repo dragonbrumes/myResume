@@ -1,0 +1,58 @@
+@import '~/styles/vars'
+// @import '../../assets/react-wallpapers.jpg'
+.home
+
+    &-background
+        width: 100%
+        height 100vh
+        // background no-repeat center right fixed url("../../assets/robin-wallpapers.jpg")
+        background-size: cover
+        overflow: hidden
+        // opacity:0.55
+        align-content: center
+        background-color: transparent
+        display: block;
+        position: relative;
+
+    &-background::after
+        content: ""
+        width: 100%
+        height 100vh
+        background no-repeat center right fixed url("../../assets/robin-wallpapers.jpg")
+        background-size: cover
+        overflow: hidden
+        opacity:0.55
+        align-content: center    
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;    
+
+    &-card
+        display: inline-block
+        width: 50%
+        margin: auto
+        margin-top: 20vh
+        z-index: 300
+        position: relative
+   
+        &-name
+            font-family: 'Acme', sans-serif
+            // mix-blend-mode: difference
+            text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+            padding: .5em
+            display inline-block
+            border-bottom 1px solid #000
+            font-size: 3em
+
+        &-r
+            color: #BD6F44
+            font-weight bolder  
+            font-size: 1.2em  
+
+        &-jobtitle
+            font-size: 2em
+            padding-top .5em
+            padding-bottom .7em
+

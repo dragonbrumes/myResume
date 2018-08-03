@@ -7,9 +7,9 @@ const Experiences = ({ company, spanTime, jobTitle, inCharge }) => (
   <React.Fragment>
     <Container>
       <Transition
-        animation="browse right"
+        animation="fade left"
         transitionOnMount={true}
-        duration={500}
+        duration={1000}
       >
         <Grid columns="equal" className="career-column" divided>
           <Grid.Row stretched centered>

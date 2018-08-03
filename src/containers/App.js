@@ -16,8 +16,12 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <Switch>
-          <Route exact path="/" component={AnimatedWrapper(Main)} />
-          <Route exact path="/experiences" component={Experiences} />
+          <Route exact path="/" component={Main} />
+          <Route
+            exact
+            path="/career"
+            component={Experiences}
+          />
         </Switch>
         <Footer />
       </React.Fragment>
