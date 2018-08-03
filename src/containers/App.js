@@ -1,13 +1,12 @@
 import React, { Component } from "react"
-import {
-  Route,
-  Switch,
-} from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 
 import Header from "~/containers/Header/Header"
 import Main from "~/containers/Main/Main"
-import Exp from "~/containers/Exp/Exp"
+import Experiences from "~/containers/Experiences/Experiences"
 import Footer from "~/containers/Footer/Footer"
+
+import AnimatedWrapper from "./AnimatedWrapper/AnimatedWrapper"
 
 import "./app.styl"
 
@@ -17,8 +16,8 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/experiences" component={Exp} />
+          <Route exact path="/" component={AnimatedWrapper(Main)} />
+          <Route exact path="/experiences" component={Experiences} />
         </Switch>
         <Footer />
       </React.Fragment>

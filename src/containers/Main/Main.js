@@ -1,16 +1,12 @@
 import React, { Component } from "react"
 
-import Heading from "~/components/commons/Heading"
+import MainContent from "~/components/MainContent/MainContent"
 
 import "./main.styl"
 
 class Main extends Component {
   render() {
-    return (
-      <Heading tag="h1" className="main-h1">
-        Main
-      </Heading>
-    )
+    return <MainContent />
   }
 }
 
