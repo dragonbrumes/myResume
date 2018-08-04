@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-import FooterContent from "~/components/FooterContent/FooterContent"
+import {default as FooterContent}  from "~/components/Footer/Footer"
 
 import "./footer.styl"
 

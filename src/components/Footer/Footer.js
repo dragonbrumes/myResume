@@ -1,10 +1,13 @@
 import React, { Component } from "react"
 import { Menu } from "semantic-ui-react"
 import { Link } from "react-router-dom"
+import { Icon, Label } from 'semantic-ui-react'
 
-import "./nav.styl"
+import Heading from '~/components/commons/Heading'
 
-class Nav extends Component {
+import "./footer.styl"
+
+class Footer extends Component {
   state = {}
 
   // the state contain the active link
@@ -15,16 +18,27 @@ class Nav extends Component {
   render() {
     const { activeItem } = this.state
 
-    return <Menu text fixed="top" className="nav">
-        {/* Menu.Item is transform in a react-router Link with the as parameter and understand the to property  */}
-        <Menu.Item as={Link} to="/" name="Home" active={activeItem === "Home"} content="Home" onClick={this.handleItemClick} className="nav-link" />
-        <Menu.Item as={Link} to="/career" name="career" active={activeItem === "career"} content="career" onClick={this.handleItemClick} className="nav-link" />
-        <Menu.Item as={Link} to="/educations" name="Educations" active={activeItem === "Educations"} content="Educations" onClick={this.handleItemClick} className="nav-link" />
-      </Menu>
+    return (
+      <div className="footer">
+      <Heading tag="h2" className="footer-h1">Contact</Heading>
+      <div>
+            <Label as={Link} to="mailto:stephane@lanteri.fr">
+      <Icon name='mail' />
+      stephane@lanteri.fr
+    </Label>
+         </div>
+      <div>
+            <Label as={Link} to="https://www.linkedin.com/in/stephane-lanteri/" target="_blank">
+      <Icon name='linkedin' />
+      https://www.linkedin.com/in/stephane-lanteri/
+    </Label>
+         </div>
+      </div>
+    )
   }
 }
 
-export default Nav
+export default Footer
 
 // const Nav = () => (
 
