@@ -21,7 +21,7 @@ class Experiences extends Component {
     ))
 
     return (
-      <Container>
+      <div className="career">
         <Heading tag="h1" className="exp-h1">
           <Transition
             animation="fade left"
@@ -32,7 +32,7 @@ class Experiences extends Component {
           </Transition>
         </Heading>
         <div> {career} </div>
-      </Container>
+      </div>
     )
   }
 }

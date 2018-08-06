@@ -18,7 +18,7 @@ class Nav extends Component {
     return <Menu text fixed="top" className="nav">
         {/* Menu.Item is transform in a react-router Link with the as parameter and understand the to property  */}
         <Menu.Item as={Link} to="/" name="Home" active={activeItem === "Home"} content="Home" onClick={this.handleItemClick} className="nav-link" />
-        <Menu.Item as={Link} to="/career" name="career" active={activeItem === "career"} content="career" onClick={this.handleItemClick} className="nav-link" />
+        <Menu.Item as={Link} to="/career" name="Career" active={activeItem === "career"} content="Career" onClick={this.handleItemClick} className="nav-link" />
         <Menu.Item as={Link} to="/educations" name="Educations" active={activeItem === "Educations"} content="Educations" onClick={this.handleItemClick} className="nav-link" />
       </Menu>
   }
