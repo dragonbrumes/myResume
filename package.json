@@ -5,7 +5,7 @@
   "main": "index.html",
   "repository": "git@github.com:O-clock-Hyperspace/React-modele.git",
   "author": "Stéphane Lanteri <stephane@lanteri.fr>",
-  "license": "BY-NC",
+  "license": "CC-BY-NC-2.5",
   "private": false,
   "devDependencies": {
     "autoprefixer": "^8.5.2",
