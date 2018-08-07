@@ -2,10 +2,10 @@
   "name": "myResume",
   "version": "0.1.0",
   "description": "My resume",
-  "main": "index.js",
+  "main": "index.html",
   "repository": "git@github.com:O-clock-Hyperspace/React-modele.git",
   "author": "Stéphane Lanteri <stephane@lanteri.fr>",
-  "license": "CC BY-NC",
+  "license": "BY-NC",
   "private": false,
   "devDependencies": {
     "autoprefixer": "^8.5.2",
@@ -22,14 +22,12 @@
     "eslint-plugin-react": "^7.8.2",
     "parcel-bundler": "^1.8.1",
     "postcss-modules": "^1.1.0",
-    "react-dom": "^16.4.0",
     "stylint": "^1.5.9",
     "stylus": "^0.54.5"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.10",
-    "parcel-bundler": "^1.8.1",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-addons-css-transition-group": "^15.6.2",
