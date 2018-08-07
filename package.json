@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "My resume",
   "main": "index.js",
-  // "main": "server.js",
   "repository": "git@github.com:O-clock-Hyperspace/React-modele.git",
   "author": "Stéphane Lanteri <stephane@lanteri.fr>",
   "license": "CC BY-NC",
@@ -42,9 +41,7 @@
     "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
-    // "start": "react-scripts start",
     "start": "parcel src/index.html",
-    // "build": "parcel build src/index.html",
     "clean": "rm -rf .cache dist",
     "watch": "yarn clean && yarn start"
   }
