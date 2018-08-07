@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "My resume",
   "main": "index.js",
+  // "main": "server.js",
   "repository": "git@github.com:O-clock-Hyperspace/React-modele.git",
-  "author": "Stéphane Lanter <stephane@lanteri.fr>",
+  "author": "Stéphane Lanteri <stephane@lanteri.fr>",
   "license": "CC BY-NC",
   "private": false,
   "devDependencies": {
@@ -29,6 +30,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.10",
+    "parcel-bundler": "^1.8.1",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-addons-css-transition-group": "^15.6.2",
@@ -40,7 +42,9 @@
     "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
+    // "start": "react-scripts start",
     "start": "parcel src/index.html",
+    // "build": "parcel build src/index.html",
     "clean": "rm -rf .cache dist",
     "watch": "yarn clean && yarn start"
   }
