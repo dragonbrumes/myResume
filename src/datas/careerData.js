@@ -1,6 +1,7 @@
 const careerData = [
   {
     company: "CNAV [Organisme public]",
+    logo: "cnav",
     spanTime: "11/2016 au 02/2017",
     jobTitle: "Chef de projet web",
     inCharge:
@@ -8,6 +9,7 @@ const careerData = [
   },
   {
     company: "Datasolution [agence web]",
+    logo: "datasolution",
     spanTime: "09/2016 au 06/2016",
     jobTitle: "Chef de projet web",
     inCharge:
@@ -15,6 +17,7 @@ const careerData = [
   },
   {
     company: "Baobaz",
+    logo: "baobaz",
     spanTime: "06/2016 au 06/2015",
     jobTitle: "Chef de projet web",
     inCharge:
@@ -22,6 +25,7 @@ const careerData = [
   },
   {
     company: "Consultant indépendant",
+    logo: "odyssee",
     spanTime: "depuis 06/2011",
     jobTitle: "Consultant web",
     inCharge:
@@ -29,6 +33,7 @@ const careerData = [
   },
   {
     company: "Malakoff-Mederic [assureur]",
+    logo: "malakoff",
     spanTime: "06/2016 au 06/2015",
     jobTitle: "Chef de projet web AMOA",
     inCharge:

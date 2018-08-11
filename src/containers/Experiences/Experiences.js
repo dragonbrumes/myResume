@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Heading from "~/components/commons/Heading"
 import { Transition, Container } from "semantic-ui-react"
-import styled, { css } from "react-emotion"
+import styled, { cx, css } from "react-emotion"
 
 import Experience from "../../components/Experience/Experience"
 import careerData from "../../datas/careerData"
@@ -11,53 +11,66 @@ import "./experiences.styl"
 class Experiences extends Component {
   render() {
     // map on career datas and sended to the exp component. setup even or odd for css
-
+    // default increment values
     let spacing = 1
+    let duration = 1500
 
+    // generating Experience component with data
     const career = careerData.map((experience, index) => {
+      // increment duration animation timer for experiences boxes
+      duration = duration + 500
+
+      // default static styles for exp boxes even & odd
+      let commonStyle = css({
+        // color: "white",
+        padding: "1em",
+        backgroundColor: "white",
+        border: "1px solid #757575",
+        width: "400px",
+        height: "250px",
+        position: "absolute",
+        top: spacing,
+        boxShadow: "0px 4px 7px 1px rgba(117,117,117,1)"
+      })
+      // right: "auto"
+      // declaration of vars
+      let evenStyle
+      let oddStyle
       let myStyle
+
       if (index % 2 === 0) {
-        myStyle = css({
-          color: "rebeccapurple",
-          border: "1px solid black",
-          width: "300px",
-          height: "150px",
-          position: "absolute",
+        // generate top & left placement for even boxes
+        evenStyle = css({
           top: spacing,
-          left: 100,
-          right: "auto"
+          right: "auto",
+          left: 0
         })
-        console.log(myStyle)
+        // combine default & even styles
+        myStyle = cx(commonStyle, evenStyle)
       } else {
-        myStyle = css({
-          color: "rebeccapurple",
-          border: "1px solid red",
-          marginTop: "1em",
-          width: "300px",
-          height: "150px",
-          position: "absolute",
-          top: 20 + spacing,
-          left: 420,
-          right: "auto"
+        // generate top & left placement for odd boxes
+        oddStyle = css({
+          top: 50 + spacing,
+          right: 0,
+          left: "auto"
         })
-        spacing = spacing + 155
-        console.log(myStyle)
+        // combine default & odd styles
+        myStyle = cx(commonStyle, oddStyle)
+        // increment the spacing
+        spacing = spacing + 260
       }
 
-      // const myStyle = styled("Experience")`
-      //   color: rebeccapurple;
-      // `
       return (
         <Experience
           key={experience.company}
           company={experience.company}
+          logo={experience.logo}
           spanTime={experience.spanTime}
           jobTitle={experience.jobTitle}
           inCharge={experience.inCharge}
           increment={`experiences-box--${index + 1}`}
-          // className={myStyle}
           myStyle={myStyle}
-          // oddEven={index % 2 === 0 ? "experiences-even" : "experiences-odd"}
+          duration={duration}
         />
       )
     })
@@ -70,12 +83,15 @@ class Experiences extends Component {
             transitionOnMount={true}
             duration={1000}
           >
-            <div>Career</div>
+            <div>Work Experience</div>
           </Transition>
         </Heading>
         {/* Test new prez */}
         {/* <Experience oddEven /> */}
-        <div className="experiences-wrapper"> {career} </div>
+        <div className="experiences-wrapper">
+          <span className="experiences-timeline">.</span>
+          {career}
+        </div>
       </div>
     )
   }

@@ -2,21 +2,37 @@ import React from "react"
 import { Grid, Container, Segment, Header, Transition } from "semantic-ui-react"
 import Linkify from "react-linkify"
 import styled from "react-emotion"
+import Logo from "../../assets/index"
+import * as logos from "../../assets/"
 
 import "./experience.styl"
 
-const Experiences = ({ company, spanTime, jobTitle, inCharge, myStyle }) => (
+const Experiences = ({
+  company,
+  logo,
+  spanTime,
+  jobTitle,
+  inCharge,
+  myStyle,
+  duration
+}) => (
   <React.Fragment>
-    {/* <div className="experiences">
-      <div className="experiences-wrapper"> */}
-    {/* <div className="experiences-box--odd">box 1</div>
-        <div className="experiences-box--even">box 2</div> */}
-    <div className={myStyle}>{company}</div>
-    {/* <div className="experiences-box">{oddEven} box 2</div>
-        <div className="experiences-box">{oddEven} box 3</div>
-        <div className="experiences-box">{oddEven} box 4</div> */}
-    {/* </div>
-    </div> */}
+    <Transition animation="fade" transitionOnMount={true} duration={duration}>
+      <div className={myStyle}>
+        {/* <span className="experiences-triangle">.</span> */}
+        <span className="experiences-bar">.</span>
+        <div className="experiences-spanTime">{spanTime}</div>
+        {/* <div className="experiences-company">{company}</div> */}
+        <div className="experiences-logos">
+          {/* combine logo name from datas & logos img from assets folder */}
+          <img src={logos[logo]} className={`experiences-logo--${logo}`} />
+        </div>
+        <div className="experiences-jobTitle">{jobTitle}</div>
+        <div className="experiences-inCharge">
+          <Linkify properties={{ target: "_blank" }}>{inCharge}</Linkify>
+        </div>
+      </div>
+    </Transition>
   </React.Fragment>
 
   // <React.Fragment>
