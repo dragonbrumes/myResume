@@ -1,5 +1,88 @@
 @import '~/styles/vars'
 
+.experiences
+
+    &-odd
+        background-color: purple
+        margin 0.5em 0
+        align-self flex-start
+        width: 50vw
+    &-even
+        background-color: blue
+        width: 50vw
+        colors = grey black yellow 
+        for color, i in colors
+            background-color color
+            width: 50vw + i
+
+    &-wrapper
+        // width: 75vw
+        // background-color #fff
+        // position: relative
+        // margin: auto
+
+colors = grey blue yellow red mediumorchid
+widthPlus = 10px
+for color, i in colors
+    .experiences-box--{i}
+        widthPlus = widthPlus + widthPlus
+        border: 1px solid color
+        color: color
+        width: $box-width + $box-width
+
+.experiences-box:nth-child(even)
+        border: 1px solid blue
+        color: blue
+        // width: $box-width
+        // height : $box-height
+        // position: absolute
+        top: $box-pos-even-top + 20px
+        left: $box-pos-even-left
+        right: auto
+        colors = grey black yellow 
+        for i in (1..5)
+            width: 50vw + i    
+      
+.experiences-box:nth-child(odd)
+        border: 1px solid red
+        // width: $box-width
+        // height : $box-height
+        // position: absolute
+        // top: $box-pos-odd-top + 60px
+        // left: $box-pod-odd-left
+        // right: auto
+
+    // &-box:nth-child(even)   
+    //     width: $box-width
+    //     position: absolute
+    //     left: 0px
+    //     top: 0px
+    //     right: auto
+    //     // border: 1px solid black        
+    // &-box:nth-child(odd)    
+    //     width: $box-width
+    //     position: absolute
+    //     left: 310px
+    //     top: 10px
+    //     right: auto
+    //     // border: 1px solid black
+
+
+    // &-box--odd
+    //     width: 300px
+    //     position: absolute
+    //     left: 0px
+    //     top: 0px
+    //     right: auto
+    //     border: 1px solid black
+    // &-box--even
+    //     width: 300px
+    //     position: absolute
+    //     left: 310px
+    //     top: 10px
+    //     right: auto
+    //     border: 1px solid black
+
 .career
 
     &-column
@@ -18,3 +101,8 @@
 
 .ui.grid    
     margin-bottom: 2em
+
+
+
+
+// ui divided equal width grid fade left career-column visible transition    

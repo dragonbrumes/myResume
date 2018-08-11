@@ -1,9 +1,10 @@
 import React, { Component } from "react"
 import { Menu } from "semantic-ui-react"
 import { Link } from "react-router-dom"
-import { Icon, Label } from 'semantic-ui-react'
+import { Icon, Label } from "semantic-ui-react"
+import Linkify from "react-linkify"
 
-import Heading from '~/components/commons/Heading'
+import Heading from "~/components/commons/Heading"
 
 import "./footer.styl"
 
@@ -20,19 +21,28 @@ class Footer extends Component {
 
     return (
       <div className="footer">
-      <Heading tag="h2" className="footer-h1">Contact</Heading>
-      <div>
-            <Label as={Link} to="mailto:stephane@lanteri.fr">
-      <Icon name='mail' />
-      stephane@lanteri.fr
-    </Label>
-         </div>
-      <div>
-            <Label as={Link} to="https://www.linkedin.com/in/stephane-lanteri/" target="_blank">
-      <Icon name='linkedin' />
-      https://www.linkedin.com/in/stephane-lanteri/
-    </Label>
-         </div>
+        <Heading tag="h2" className="footer-h1">
+          Contact
+        </Heading>
+        <div className="footer-links">
+          <Linkify className="footer-links-labels">
+            <Label>
+              <Icon name="mail" />
+              stephane@lanteri.fr
+            </Label>
+          </Linkify>
+          <div>
+            <Linkify
+              properties={{ target: "_blank" }}
+              className="footer-links-labels"
+            >
+              <Label>
+                <Icon name="linkedin" />
+                https://www.linkedin.com/in/stephane-lanteri/
+              </Label>
+            </Linkify>
+          </div>
+        </div>
       </div>
     )
   }

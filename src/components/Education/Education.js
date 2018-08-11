@@ -1,5 +1,6 @@
 import React from "react"
 import { Grid, Container, Segment, Header, Transition } from "semantic-ui-react"
+import Linkify from "react-linkify"
 
 import "./education.styl"
 
@@ -24,7 +25,7 @@ const Education = ({ company, spanTime, jobTitle, inCharge }) => (
                 <Header as="h2">{jobTitle}</Header>
               </Segment>
               <Segment className="education-charge" basic>
-                {inCharge}
+                <Linkify properties={{ target: "_blank" }}>{inCharge}</Linkify>
               </Segment>
             </Grid.Column>
           </Grid.Row>

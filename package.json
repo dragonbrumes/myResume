@@ -26,12 +26,17 @@
     "stylus": "^0.54.5"
   },
   "dependencies": {
+    "babel-plugin-emotion": "^9.2.6",
     "babel-polyfill": "^6.26.0",
+    "classnames": "^2.2.6",
+    "emotion": "^9.2.6",
     "lodash": "^4.17.10",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.0",
+    "react-emotion": "^9.2.6",
+    "react-linkify": "^0.2.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
@@ -39,7 +44,7 @@
     "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
-    "start": "parcel build src/index.html",
+    "start": "parcel src/index.html",
     "clean": "rm -rf .cache dist",
     "watch": "yarn clean && yarn start"
   }
