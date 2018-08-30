@@ -5,10 +5,21 @@
     &-spanTime
         color: #e8676b
         margin-bottom: 0.5em
-    &-bar
-        width: 150px
+    &-card::before
+        background-color: red
+        content: ' '   
+        display: block
+        width: 100%
         height: 2px
-        background-color:#e8676b    
+    &-bar
+        display: block
+        width: 100%
+        height: 2px
+        margin: 0
+        padding: 0
+        background-color:#e8676b 
+    &-content
+        padding: 1em 5%      
     &-company
         color: black
         font-size: 1.2em

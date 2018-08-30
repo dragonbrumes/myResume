@@ -15,7 +15,7 @@ class Experiences extends Component {
     let spacing = 1
     let duration = 1500
 
-    // generating Experience component with data
+    // generating Experience component with data and Css with Emotion
     const career = careerData.map((experience, index) => {
       // increment duration animation timer for experiences boxes
       duration = duration + 500
@@ -23,10 +23,10 @@ class Experiences extends Component {
       // default static styles for exp boxes even & odd
       let commonStyle = css({
         // color: "white",
-        padding: "1em",
+        // padding: "1em",
+        // border: "1px solid #757575",
         backgroundColor: "white",
-        border: "1px solid #757575",
-        width: "400px",
+        maxWidth: "400px",
         height: "250px",
         position: "absolute",
         top: spacing,
@@ -56,7 +56,7 @@ class Experiences extends Component {
         })
         // combine default & odd styles
         myStyle = cx(commonStyle, oddStyle)
-        // increment the spacing
+        // increment the boxes spacing
         spacing = spacing + 260
       }
 

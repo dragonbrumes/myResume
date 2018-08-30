@@ -21,6 +21,7 @@ class App extends Component {
           <Route exact path="/" component={Main} />
           <Route exact path="/career" component={Experiences} />
           <Route exact path="/educations" component={Educations} />
+          <Route exact path="/godaddy" component={Godaddy} />
         </Switch>
         <Footer />
       </React.Fragment>

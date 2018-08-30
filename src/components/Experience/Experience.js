@@ -18,18 +18,20 @@ const Experiences = ({
 }) => (
   <React.Fragment>
     <Transition animation="fade" transitionOnMount={true} duration={duration}>
-      <div className={myStyle}>
+      <div className={`experiences-card ${myStyle}`}>
         {/* <span className="experiences-triangle">.</span> */}
-        <span className="experiences-bar">.</span>
-        <div className="experiences-spanTime">{spanTime}</div>
-        {/* <div className="experiences-company">{company}</div> */}
-        <div className="experiences-logos">
-          {/* combine logo name from datas & logos img from assets folder */}
-          <img src={logos[logo]} className={`experiences-logo--${logo}`} />
-        </div>
-        <div className="experiences-jobTitle">{jobTitle}</div>
-        <div className="experiences-inCharge">
-          <Linkify properties={{ target: "_blank" }}>{inCharge}</Linkify>
+        {/* <span className="experiences-bar">.</span> */}
+        <div className="experiences-content">
+          <div className="experiences-spanTime">{spanTime}</div>
+          {/* <div className="experiences-company">{company}</div> */}
+          <div className="experiences-logos">
+            {/* combine logo name from datas & logos img from assets folder */}
+            <img src={logos[logo]} className={`experiences-logo--${logo}`} />
+          </div>
+          <div className="experiences-jobTitle">{jobTitle}</div>
+          <div className="experiences-inCharge">
+            <Linkify properties={{ target: "_blank" }}>{inCharge}</Linkify>
+          </div>
         </div>
       </div>
     </Transition>
