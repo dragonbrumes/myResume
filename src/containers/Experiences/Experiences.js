@@ -37,6 +37,7 @@ class Experiences extends Component {
       let evenStyle
       let oddStyle
       let myStyle
+      let triangleStyle
 
       if (index % 2 === 0) {
         // generate top & left placement for even boxes
@@ -44,6 +45,16 @@ class Experiences extends Component {
           top: spacing,
           right: "auto",
           left: 0
+        })
+        // generate triangle style
+        triangleStyle = css({
+          borderStyle: "solid",
+          borderWidth: "20px 20px 0 20px",
+          borderColor: "red transparent transparent transparent",
+          content: '" "',
+          position: "absolute",
+          top: "0px",
+          right: "-18px"
         })
         // combine default & even styles
         myStyle = cx(commonStyle, evenStyle)
@@ -53,6 +64,16 @@ class Experiences extends Component {
           top: 50 + spacing,
           right: 0,
           left: "auto"
+        })
+        // generate triangle style
+        triangleStyle = css({
+          borderStyle: "solid",
+          borderWidth: "20px 20px 0 20px",
+          borderColor: "red transparent transparent transparent",
+          content: '" "',
+          position: "absolute",
+          top: "0px",
+          left: "-18px"
         })
         // combine default & odd styles
         myStyle = cx(commonStyle, oddStyle)
@@ -70,10 +91,11 @@ class Experiences extends Component {
           inCharge={experience.inCharge}
           increment={`experiences-box--${index + 1}`}
           myStyle={myStyle}
+          triangleStyle={triangleStyle}
           duration={duration}
         />
       )
-    })
+    }) // end career const
 
     return (
       <div className="experiences">
@@ -90,6 +112,8 @@ class Experiences extends Component {
         {/* <Experience oddEven /> */}
         <div className="experiences-wrapper">
           <span className="experiences-timeline">.</span>
+          <span className="experiences-bullet">.</span>
+          {/* contains experience component */}
           {career}
         </div>
       </div>

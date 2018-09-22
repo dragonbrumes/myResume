@@ -16,12 +16,11 @@ class Nav extends Component {
     const { activeItem } = this.state
 
     return <Menu text fixed="top" className="nav">
-        {/* Menu.Item is transform in a react-router Link with the as parameter and understand the to property  */}
-        <Menu.Item as={Link} to="/" name="Home" active={activeItem === "Home"} content="Home" onClick={this.handleItemClick} className="nav-link" />
-        <Menu.Item as={Link} to="/career" name="Career" active={activeItem === "career"} content="Career" onClick={this.handleItemClick} className="nav-link" />
-        <Menu.Item as={Link} to="/educations" name="Educations" active={activeItem === "Educations"} content="Educations" onClick={this.handleItemClick} className="nav-link" />
-        <Menu.Item as={Link} to="/godaddy" name="godaddy" active={activeItem === "godaddy"} content="godaddy" onClick={this.handleItemClick} className="nav-link" />
-      </Menu>
+      {/* Menu.Item is transform in a react-router Link with the as parameter and understand the to property  */}
+      <Menu.Item as={Link} to="/" name="Home" active={activeItem === "Home"} content="Home" onClick={this.handleItemClick} className="nav-link" />
+      <Menu.Item as={Link} to="/career" name="Career" active={activeItem === "career"} content="Career" onClick={this.handleItemClick} className="nav-link" />
+      <Menu.Item as={Link} to="/educations" name="Educations" active={activeItem === "Educations"} content="Educations" onClick={this.handleItemClick} className="nav-link" />
+    </Menu>
   }
 }
 

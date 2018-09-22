@@ -1,43 +1,43 @@
 const careerData = [
   {
-    company: "CNAV [Organisme public]",
+    company: "CNAV [Public organism]",
     logo: "cnav",
-    spanTime: "11/2016 au 02/2017",
-    jobTitle: "Chef de projet web",
+    spanTime: "11/2016 to 02/2017",
+    jobTitle: "Web project manager",
     inCharge:
-      "Chef de projet sur l’évolution des systèmes d’information de lassuranceretraite.fr. Analyse des besoins, planning, rédaction de cdc et guide utilisateur."
+      "Project manager in charge of upgrading the information system of lassuranceretraite.fr website.Needs analysis, planning, specifications document and user guide."
   },
   {
-    company: "Datasolution [agence web]",
+    company: "Datasolution [Web agency]",
     logo: "datasolution",
-    spanTime: "09/2016 au 06/2016",
-    jobTitle: "Chef de projet web",
+    spanTime: "09/2016 to 06/2016",
+    jobTitle: "Web project manager",
     inCharge:
-      "Chef de projet sur le suivi TMA et la mise en place d’évolutions pour jacquelineriu.fr, sols-europe.com et www.pharmavie.fr. Analyse des besoins, chiffrage, planning, UX design, suivi des développements techniques et design. Environnement: Magento, PIM Core, Mirakl, Redmine"
+      "Project manager in charge of TPAM and evolutions for jacquelineriu.fr, sols-europe.com and pharmavie.fr. Needs analysis, costing, planning, UX design, upgrades developments. Environment: Magento, PIM Core, Mirakl, Redmine"
   },
   {
     company: "Baobaz",
     logo: "baobaz",
-    spanTime: "06/2016 au 06/2015",
-    jobTitle: "Chef de projet web",
+    spanTime: "06/2016 to 06/2015",
+    jobTitle: "Web project manager",
     inCharge:
-      "Chef de projet sur le site e-commerce opticiens-atol.com. Analyse des besoins, planning, UX design, comités projets, suivi des développements techniques et design. Environnement : Magento, Ogone, Jira"
+      "Project manager in charge of Atol Les Opticiens e-comerce website. Needs analysis, planning, UX design, project committee, development follow-up. Environment : Magento, Ogone, Jira"
   },
   {
-    company: "Consultant indépendant",
+    company: "Self-employed worker",
     logo: "odyssee",
-    spanTime: "depuis 06/2011",
-    jobTitle: "Consultant web",
+    spanTime: "06/2011 to 01/08/2018",
+    jobTitle: "Web consultant",
     inCharge:
-      "Consultant en gestion de projet et WebMarketing : Spécifications fonctionnelles, coordination, stratégie SEO, parcours client. Clients : Groupe Zanier (Kidiliz.com, Catimini.com, Z-enfant.com), Cosyforyou.com, FMA.fr (courtier), AssurBonPlan.fr (courtier), Jassimmo.com, vente-directe-vigneron-independant.com, comptoir-des-abbayes.fr."
+      "Web and e-maketing consultant: Project ownership assistance, SEO strategy, customer path. Clients : Zanier Group (Kidiliz.com, Catimini.com, Z-enfant.com), Cosyforyou.com, FMA.fr (bloker), AssurBonPlan.fr (broker), Jassimmo.com, vente-directe-vigneron-independant.com, comptoir-des-abbayes.fr."
   },
   {
-    company: "Malakoff-Mederic [assureur]",
+    company: "Malakoff-Mederic [broker]",
     logo: "malakoff",
-    spanTime: "06/2016 au 06/2015",
-    jobTitle: "Chef de projet web AMOA",
+    spanTime: "06/2016 to 06/2015",
+    jobTitle: "Web project ownership assistance",
     inCharge:
-      "Chef de projet sur la mise en place de store locator, de webcallback et évolutions métier : Analyse et rédaction expression de besoins, maquettage, réunions. Environnement: LeadFormance, ClicRDV."
+      "Project manager on the set-up of store locator and webcallback: Needs analysis, mock-up, meetings."
   }
 ]
 
