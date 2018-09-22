@@ -1,7 +1,8 @@
 @import '~/styles/vars'
 
 .experiences
-    background: $page-gradient
+    // background: $page-gradient
+    background-color: #FAFAFA
     height: 100vh
     width: 100%
 
@@ -12,11 +13,22 @@
         text-align: center
     &-timeline     
         position: absolute
-        width: 10px
+        width: 2px
         height 80vh
         left: auto
         right: auto
-        top: 50px
-        color: #e8676b
-        background-color: #e8676b
+        top: 0px
+        background-color: $timeLineColor
         content: ' '
+    // &-bullet
+    //     position: absolute
+    //     // left: 10px
+    //     // right: "calc(%s - %s)" % (trianglePos triangle)
+    //     // right: "%s" % $trianglePos
+    //     right 49.20%
+    //     top: 0px
+    //     width: 12px;
+    //     height: 12px;
+    //     background: blue; 
+    //     border-radius: 70px; 
+    //     content: ' '        

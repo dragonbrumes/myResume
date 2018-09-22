@@ -1,12 +1,14 @@
 @import '~/styles/vars'
 
+// experience boxes are js generated with emotion
+
 .experiences
 
-    &-spanTime
-        color: #e8676b
-        margin-bottom: 0.5em
+    // &-spanTime
+    //     color: #e8676b
+    //     margin-bottom: 0.5em
     &-card::before
-        background-color: red
+        background-color: $cardBeforColor
         content: ' '   
         display: block
         width: 100%
@@ -18,11 +20,6 @@
         margin: 0
         padding: 0
         background-color:#e8676b 
-    &-bullet
-        width: 140px;
-        height: 140px;
-        background: blue; 
-        border-radius: 70px;      
     &-content
         padding: 1em 5%      
     &-company

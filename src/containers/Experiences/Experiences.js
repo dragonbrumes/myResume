@@ -38,6 +38,12 @@ class Experiences extends Component {
       let oddStyle
       let myStyle
       let triangleStyle
+      let bulletStyle
+
+      // colors
+      let bulletColor = 'royalblue'
+      let triangleColor = '#506874'
+
 
       if (index % 2 === 0) {
         // generate top & left placement for even boxes
@@ -46,16 +52,28 @@ class Experiences extends Component {
           right: "auto",
           left: 0
         })
-        // generate triangle style
+        // generate triangle style (position from the box)
         triangleStyle = css({
           borderStyle: "solid",
           borderWidth: "20px 20px 0 20px",
-          borderColor: "red transparent transparent transparent",
+          borderColor: triangleColor + " transparent transparent transparent",
           content: '" "',
           position: "absolute",
           top: "0px",
           right: "-18px"
         })
+        // generate bullets style & position (position from the box)
+        bulletStyle = css({
+          position: 'absolute',
+          right: '-17.90%',
+          top: '-3px',
+          width: '12px',
+          height: '12px',
+          background: bulletColor,
+          borderRadius: '70px',
+          content: '" "',
+        })
+
         // combine default & even styles
         myStyle = cx(commonStyle, evenStyle)
       } else {
@@ -65,15 +83,26 @@ class Experiences extends Component {
           right: 0,
           left: "auto"
         })
-        // generate triangle style
+        // generate triangle style (position from the box)
         triangleStyle = css({
           borderStyle: "solid",
           borderWidth: "20px 20px 0 20px",
-          borderColor: "red transparent transparent transparent",
+          borderColor: triangleColor + " transparent transparent transparent",
           content: '" "',
           position: "absolute",
           top: "0px",
           left: "-18px"
+        })
+        // generate bullets style & position (position from the box)
+        bulletStyle = css({
+          position: 'absolute',
+          left: '-17.60%',
+          top: '-3px',
+          width: '12px',
+          height: '12px',
+          background: bulletColor,
+          borderRadius: '70px',
+          content: '" "',
         })
         // combine default & odd styles
         myStyle = cx(commonStyle, oddStyle)
@@ -92,6 +121,7 @@ class Experiences extends Component {
           increment={`experiences-box--${index + 1}`}
           myStyle={myStyle}
           triangleStyle={triangleStyle}
+          bulletStyle={bulletStyle}
           duration={duration}
         />
       )
@@ -101,18 +131,15 @@ class Experiences extends Component {
       <div className="experiences">
         <Heading tag="h1" className="exp-h1">
           <Transition
-            animation="fade left"
+            animation="fade"
             transitionOnMount={true}
             duration={1000}
           >
             <div>Work Experience</div>
           </Transition>
         </Heading>
-        {/* Test new prez */}
-        {/* <Experience oddEven /> */}
         <div className="experiences-wrapper">
-          <span className="experiences-timeline">.</span>
-          <span className="experiences-bullet">.</span>
+            <span className="experiences-timeline"></span>
           {/* contains experience component */}
           {career}
         </div>

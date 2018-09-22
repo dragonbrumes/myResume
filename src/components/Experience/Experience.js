@@ -15,11 +15,13 @@ const Experiences = ({
   inCharge,
   myStyle,
   triangleStyle,
+  bulletStyle,
   duration
 }) => (
     <React.Fragment>
       <Transition animation="fade" transitionOnMount={true} duration={duration}>
         <div className={`experiences-card ${myStyle}`}>
+          <span className={bulletStyle}></span>
           <span className={triangleStyle}></span>
           {/* <span className="experiences-bar">.</span> */}
           <div className="experiences-content">
