@@ -23,6 +23,7 @@ const Experiences = ({
         <div className={`experiences-card ${myStyle}`}>
           <span className={bulletStyle}></span>
           <span className={triangleStyle}></span>
+          <div className="experiences-jobTitle">{jobTitle}</div>
           {/* <span className="experiences-bar">.</span> */}
           <div className="experiences-content">
             <div className="experiences-spanTime">{spanTime}</div>
@@ -31,7 +32,7 @@ const Experiences = ({
               {/* combine logo name from datas & logos img from assets folder */}
               <img src={logos[logo]} className={`experiences-logo--${logo}`} />
             </div>
-            <div className="experiences-jobTitle">{jobTitle}</div>
+            {/* <div className="experiences-jobTitle">{jobTitle}</div> */}
             <div className="experiences-inCharge">
               <Linkify properties={{ target: "_blank" }}>{inCharge}</Linkify>
             </div>

@@ -18,24 +18,40 @@ const careerData = [
   {
     company: "Baobaz",
     logo: "baobaz",
-    spanTime: "06/2016 to 06/2015",
+    spanTime: "06/2015 to 06/2016",
     jobTitle: "Web project manager",
     inCharge:
       "Project manager in charge of Atol Les Opticiens e-comerce website. Needs analysis, planning, UX design, project committee, development follow-up. Environment : Magento, Ogone, Jira"
   },
   {
+    company: "Malakoff-Mederic [broker]",
+    logo: "malakoff",
+    spanTime: "12/2014 to 09/2015",
+    jobTitle: "Web project ownership assistance",
+    inCharge:
+      "Project manager on the set-up of store locator and webcallback: Needs analysis, mock-up, meetings."
+  },
+  {
     company: "Self-employed worker",
     logo: "odyssee",
-    spanTime: "06/2011 to 01/08/2018",
-    jobTitle: "Web consultant",
+    spanTime: "06/2011 to 08/2014",
+    jobTitle: "Self-employed Web consultant",
     inCharge:
       "Web and e-maketing consultant: Project ownership assistance, SEO strategy, customer path. Clients : Zanier Group (Kidiliz.com, Catimini.com, Z-enfant.com), Cosyforyou.com, FMA.fr (bloker), AssurBonPlan.fr (broker), Jassimmo.com, vente-directe-vigneron-independant.com, comptoir-des-abbayes.fr."
   },
   {
-    company: "Malakoff-Mederic [broker]",
-    logo: "malakoff",
-    spanTime: "06/2016 to 06/2015",
-    jobTitle: "Web project ownership assistance",
+    company: "AssurOne Group [broker]",
+    logo: "assurOne",
+    spanTime: "06/2004 to 09/2011",
+    jobTitle: "SEO project manager",
+    inCharge:
+      "Project manager on the set-up of store locator and webcallback: Needs analysis, mock-up, meetings."
+  },
+  {
+    company: "Meilleurtaux [loan]",
+    logo: "mtx",
+    spanTime: "09/1999 to 09/2004",
+    jobTitle: "Webmaster",
     inCharge:
       "Project manager on the set-up of store locator and webcallback: Needs analysis, mock-up, meetings."
   }

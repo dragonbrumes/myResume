@@ -3,23 +3,24 @@
 .nav
     margin: auto
     justify-content: center
-    background-color: #506874
     &-link
         font-size: 1em
-        color:  black
-        font-family: 'Acme', sans-serif;
-
-        &-active
-            color: red
-
-.nav.menu
-    background-color: #506874
-
+        font-family: 'Nunito', sans-serif;
 .ui.text.menu 
-    background-color: #506874
-    box-shadow: 0px 6px 11px -2px rgba(173,173,173,1);
+    background-color: $navBackGround
+    box-shadow: $navShadow
+
+// links color
+.ui.text.menu .item
+    color:  $linkColor
+
+.ui.text.menu .item:hover
+    color:  $linkColor
+    text-decoration underline    
+
 .ui.text.menu .active.item
     color: #BD6F44
     border-bottom: 1px solid #BD6F44
     font-weight bolder
+
 

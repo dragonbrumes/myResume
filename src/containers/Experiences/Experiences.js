@@ -22,9 +22,6 @@ class Experiences extends Component {
 
       // default static styles for exp boxes even & odd
       let commonStyle = css({
-        // color: "white",
-        // padding: "1em",
-        // border: "1px solid #757575",
         backgroundColor: "white",
         maxWidth: "400px",
         height: "250px",
@@ -41,7 +38,7 @@ class Experiences extends Component {
       let bulletStyle
 
       // colors
-      let bulletColor = 'royalblue'
+      let bulletColor = '#506874'
       let triangleColor = '#506874'
 
 
@@ -65,7 +62,7 @@ class Experiences extends Component {
         // generate bullets style & position (position from the box)
         bulletStyle = css({
           position: 'absolute',
-          right: '-17.90%',
+          right: '-72px',
           top: '-3px',
           width: '12px',
           height: '12px',
@@ -96,7 +93,7 @@ class Experiences extends Component {
         // generate bullets style & position (position from the box)
         bulletStyle = css({
           position: 'absolute',
-          left: '-17.60%',
+          left: '-70px',
           top: '-3px',
           width: '12px',
           height: '12px',
@@ -129,17 +126,19 @@ class Experiences extends Component {
 
     return (
       <div className="experiences">
-        <Heading tag="h1" className="exp-h1">
-          <Transition
-            animation="fade"
-            transitionOnMount={true}
-            duration={1000}
-          >
-            <div>Work Experience</div>
-          </Transition>
-        </Heading>
+        <div className="experiences-row1">
+          <Heading tag="h1" className="experiences-h1">
+            <Transition
+              animation="fade"
+              transitionOnMount={true}
+              duration={1000}
+            >
+              <div>Work Experience</div>
+            </Transition>
+          </Heading>
+        </div>
         <div className="experiences-wrapper">
-            <span className="experiences-timeline"></span>
+          <span className="experiences-timeline"></span>
           {/* contains experience component */}
           {career}
         </div>
