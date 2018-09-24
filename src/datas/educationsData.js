@@ -1,22 +1,33 @@
 const educationsData = [
   {
-    company: "O'Clock",
+    company: "Opquast",
+    logo: "opquast",
     spanTime: "2018",
-    jobTitle: "Etudiant en développement Web",
+    jobTitle: "Web best practices certified",
     inCharge:
-      "Formation en développement web : Html, Css, Jquery, Php, Javascript avec spécialisation ReactJS. oclock.io"
+      "Web best practices. https://certificates.opquast.com/certificate/RQ90N4/"
+  },
+  {
+    company: "O'Clock",
+    logo: "oclock",
+    spanTime: "2018",
+    jobTitle: "Student in web development",
+    inCharge:
+      "Html, Css, Jquery, Php, Javascript with ReactJS specialization. oclock.io"
   },
   {
     company: "ISCOM Paris",
+    logo: "iscom",
     spanTime: "1999",
-    jobTitle: "Master I en communication des entreprises",
-    inCharge: "Etudes supérieur de la communication multimédia iscom.fr"
+    jobTitle: "Master of Arts in multimedia communication",
+    inCharge: "Equivalent of 4 years of studies after bachelor's: At iscom.fr (fr)"
   },
   {
     company: "ISCOM Paris.",
+    logo: "iscom",
     spanTime: "1997",
-    jobTitle: "B.T.S. en Communication des Entreprises",
-    inCharge: "Etudes de la communication appliquée aux entreprises iscom.fr"
+    jobTitle: "BTEC Higher National Diploma in corporate communication",
+    inCharge: "Equivalent of 2 years of studies after bachelor's. At iscom.fr (fr)"
   }
 ]
 

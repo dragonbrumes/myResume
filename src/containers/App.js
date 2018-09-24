@@ -1,12 +1,7 @@
 import React, { Component } from "react"
 import { Route, Switch } from "react-router-dom"
 
-// import Header from "~/containers/Header/Header"
-// import Main from "~/containers/Main/Main"
-// import Experiences from "~/containers/Experiences/Experiences"
-// import Footer from "~/containers/Footer/Footer"
-
-import { Header, Main, Experiences, Educations, Footer } from "./index"
+import { Header, Main, Experiences, Educations, Projects, Footer } from "./index"
 
 import AnimatedWrapper from "./AnimatedWrapper/AnimatedWrapper"
 
@@ -21,6 +16,7 @@ class App extends Component {
           <Route exact path="/" component={Main} />
           <Route exact path="/career" component={Experiences} />
           <Route exact path="/educations" component={Educations} />
+          <Route exact path="/projects" component={Projects} />
         </Switch>
         <Footer />
       </React.Fragment>

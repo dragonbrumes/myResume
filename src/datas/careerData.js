@@ -11,7 +11,7 @@ const careerData = [
     company: "Datasolution [Web agency]",
     logo: "datasolution",
     spanTime: "09/2016 to 06/2016",
-    jobTitle: "Web project manager",
+    jobTitle: "TPAM project manager",
     inCharge:
       "Project manager in charge of TPAM and evolutions for jacquelineriu.fr, sols-europe.com and pharmavie.fr. Needs analysis, costing, planning, UX design, upgrades developments. Environment: Magento, PIM Core, Mirakl, Redmine"
   },
@@ -19,7 +19,7 @@ const careerData = [
     company: "Baobaz",
     logo: "baobaz",
     spanTime: "06/2015 to 06/2016",
-    jobTitle: "Web project manager",
+    jobTitle: "E-commerce project manager",
     inCharge:
       "Project manager in charge of Atol Les Opticiens e-comerce website. Needs analysis, planning, UX design, project committee, development follow-up. Environment : Magento, Ogone, Jira"
   },
@@ -43,9 +43,9 @@ const careerData = [
     company: "AssurOne Group [broker]",
     logo: "assurOne",
     spanTime: "06/2004 to 09/2011",
-    jobTitle: "SEO project manager",
+    jobTitle: "SEO strategist",
     inCharge:
-      "Project manager on the set-up of store locator and webcallback: Needs analysis, mock-up, meetings."
+      "Setting-up SEO strategy. SMO, content, linking, optimisation."
   },
   {
     company: "Meilleurtaux [loan]",
@@ -53,7 +53,7 @@ const careerData = [
     spanTime: "09/1999 to 09/2004",
     jobTitle: "Webmaster",
     inCharge:
-      "Project manager on the set-up of store locator and webcallback: Needs analysis, mock-up, meetings."
+      "Various web site updates, optimizations, design"
   }
 ]
 

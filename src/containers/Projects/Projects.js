@@ -4,11 +4,11 @@ import { Transition, Container } from "semantic-ui-react"
 import styled, { cx, css } from "react-emotion"
 
 import Experience from "../../components/Experience/Experience"
-import educationsData from "../../datas/educationsData"
+import projectsData from "../../datas/projectsData"
 
-import "./educations.styl"
+import "./experiences.styl"
 
-class Educations extends Component {
+class Projects extends Component {
   render() {
     // map on career datas and sended to the exp component. setup even or odd for css
     // default increment values
@@ -16,7 +16,7 @@ class Educations extends Component {
     let duration = 1500
 
     // generating Experience component with data and Css with Emotion
-    const career = educationsData.map((experience, index) => {
+    const career = projectsData.map((experience, index) => {
       // increment duration animation timer for experiences boxes
       duration = duration + 500
 
@@ -106,6 +106,7 @@ class Educations extends Component {
         // increment the boxes spacing
         spacing = spacing + 260
       }
+
       return (
         <Experience
           key={experience.company}
@@ -132,7 +133,7 @@ class Educations extends Component {
               transitionOnMount={true}
               duration={1000}
             >
-              <div>Education</div>
+              <div>Projects</div>
             </Transition>
           </Heading>
         </div>
@@ -146,4 +147,4 @@ class Educations extends Component {
   }
 }
 
-export default Educations
+export default Projects

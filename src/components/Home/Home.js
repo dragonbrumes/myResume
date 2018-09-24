@@ -1,6 +1,8 @@
 import React from "react"
 import { Transition, Button } from "semantic-ui-react"
 
+import cv from "../../assets/stephane_lanteri-cv.pdf"
+
 import "./home.styl"
 
 const Home = () => (
@@ -13,10 +15,10 @@ const Home = () => (
       <div className="home-picture"></div>
       <div className="home-row2">
         <div className="home-row2--textIntro">
-          <p>In the digital world since 1999, I recently took the O'Clock (fr) training course on HTML, CSS, PHP, JAVASCRIPT and REACJS. I am looking for a structure that can support me in the implementation of these skills that I would put at its service. For information, I just arrived in Malta from France</p>
+          <p className="home-row2--textIntro--p">In the digital world since 1999, I used to be a web project manager. I recently wanted to change ma career and took the <a href="https://oclock.io/" download>O'Clock</a> (fr) training course on HTML, CSS, PHP, JAVASCRIPT and REACJS. I am looking for a structure that can support me in the implementation of these skills that I would put at its service. For information, I just arrived in Malta from France</p>
           <div className="home-buttons">
-            <Button color='green'>Download CV</Button>
-            <Button color='green'>Contact me</Button></div>
+            <Button color='green'><a href={cv} download>Download CV</a></Button>
+            <Button color='green'><a href="mailto:stephane@lanteri.fr">Contact me</a></Button></div>
         </div>
       </div>
 
