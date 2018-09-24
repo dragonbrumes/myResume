@@ -38,7 +38,7 @@ class Educations extends Component {
       let bulletStyle
 
       // colors
-      let bulletColor = '#506874'
+      let bulletColor = 'Green'
       let triangleColor = '#506874'
 
 

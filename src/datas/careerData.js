@@ -53,7 +53,7 @@ const careerData = [
     spanTime: "09/1999 to 09/2004",
     jobTitle: "Webmaster",
     inCharge:
-      "Various web site updates, optimizations, design"
+      "Various web site updates, optimizations, design. Corporate blog made with SPIP"
   }
 ]
 
