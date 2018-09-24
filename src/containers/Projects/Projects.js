@@ -23,7 +23,7 @@ class Projects extends Component {
       // default static styles for exp boxes even & odd
       let commonStyle = css({
         backgroundColor: "white",
-        maxWidth: "400px",
+        width: "400px",
         height: "250px",
         position: "absolute",
         top: spacing,
