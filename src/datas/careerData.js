@@ -5,7 +5,7 @@ const careerData = [
     spanTime: "11/2016 to 02/2017",
     jobTitle: "Web project manager",
     inCharge:
-      "Project manager in charge of upgrading the information system of lassuranceretraite.fr website.Needs analysis, planning, specifications document and user guide."
+      "Project manager in charge of upgrading the information system of lassuranceretraite.fr website. Expression of needs, planning, specifications document and user guide."
   },
   {
     company: "Datasolution [Web agency]",
@@ -13,7 +13,7 @@ const careerData = [
     spanTime: "09/2016 to 06/2016",
     jobTitle: "TPAM project manager",
     inCharge:
-      "Project manager in charge of TPAM and evolutions for jacquelineriu.fr, sols-europe.com and pharmavie.fr. Needs analysis, costing, planning, UX design, upgrades developments. Environment: Magento, PIM Core, Mirakl, Redmine"
+      "Project manager in charge of TPAM and evolutions for jacquelineriu.fr, sols-europe.com and pharmavie.fr. Expression of needs, costing, planning, UX design, upgrades developments. Environment: Magento, PIM Core, Mirakl, Redmine"
   },
   {
     company: "Baobaz",
@@ -21,7 +21,7 @@ const careerData = [
     spanTime: "06/2015 to 06/2016",
     jobTitle: "E-commerce project manager",
     inCharge:
-      "Project manager in charge of Atol Les Opticiens e-comerce website. Needs analysis, planning, UX design, project committee, development follow-up. Environment : Magento, Ogone, Jira"
+      "Project manager in charge of Atol Les Opticiens e-commerce website set-up. Expression of needs, planning, UX design, project committee, developments follow-up. Environment : Magento, Ogone, Jira"
   },
   {
     company: "Malakoff-Mederic [broker]",
@@ -29,7 +29,7 @@ const careerData = [
     spanTime: "12/2014 to 09/2015",
     jobTitle: "Web project ownership assistance",
     inCharge:
-      "Project manager on the set-up of store locator and webcallback: Needs analysis, mock-up, meetings."
+      "Project manager on the set-up of store locator and webcallback: expression of needs, mock-up, meetings."
   },
   {
     company: "Self-employed worker",
