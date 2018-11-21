@@ -22,6 +22,8 @@ class Nav extends Component {
       <Menu.Item as={Link} to="/career" name="Career" active={activeItem === "Career"} content="Career" onClick={this.handleItemClick} className="nav-link" />
       <Menu.Item as={Link} to="/educations" name="Educations" active={activeItem === "Educations"} content="Education" onClick={this.handleItemClick} className="nav-link" />
       <Menu.Item as={Link} to="/projects" name="Projects" active={activeItem === "Projects"} content="Projects" onClick={this.handleItemClick} className="nav-link" />
+      <Menu.Item as={Link} to="/test" name="Test" active={activeItem === "Test"} content="Test" onClick={this.handleItemClick} className="nav-link" />
+      <Menu.Item as={Link} to="/admin/AddExperience" name="AddExperience" active={activeItem === "AddExperience"} content="AddExperience" onClick={this.handleItemClick} className="nav-link" />
     </Menu>
   }
 }

@@ -7,4 +7,17 @@ import Educations from "./Educations/Educations"
 import Projects from "./Projects/Projects"
 import Footer from "~/containers/Footer/Footer"
 
-export { Header, Main, Experiences, Educations, Projects, Footer }
+import Test from "~/containers/Test/Test"
+//admin
+import AddExperience from "~/containers/Admin/AddExperience"
+
+export {
+  Header,
+  Main,
+  Experiences,
+  Educations,
+  Projects,
+  Footer,
+  AddExperience,
+  Test
+}

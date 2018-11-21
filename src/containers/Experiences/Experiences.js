@@ -1,14 +1,38 @@
 import React, { Component } from "react"
-import Heading from "~/components/commons/Heading"
+import axios from "axios"
 import { Transition, Container } from "semantic-ui-react"
 import styled, { cx, css } from "react-emotion"
 
+import Heading from "~/components/commons/Heading"
 import Experience from "../../components/Experience/Experience"
 import careerData from "../../datas/careerData"
 
 import "./experiences.styl"
 
 class Experiences extends Component {
+  state = {
+    experiences: []
+  }
+
+  componentDidMount() {
+    const URI =
+      process.env.NODE_ENV === "production"
+        ? "http://backend.lanteri.fr"
+        : "http://localhost:3000"
+    console.log(URI)
+
+    http: axios
+      // .get("https://backend.lanteri.fr/experiences")
+      .get(URI + "/experiences")
+      .then(response => {
+        this.setState({ experiences: response.data.data })
+      })
+      .catch(function(error) {
+        // handle error
+        console.log(error)
+      })
+  }
+
   render() {
     // map on career datas and sended to the exp component. setup even or odd for css
     // default increment values
@@ -16,7 +40,8 @@ class Experiences extends Component {
     let duration = 1500
 
     // generating Experience component with data and Css with Emotion
-    const career = careerData.map((experience, index) => {
+    // const career = careerData.map((experience, index) => {
+    const career = this.state.experiences.map((experience, index) => {
       // increment duration animation timer for experiences boxes
       duration = duration + 500
 
@@ -38,9 +63,8 @@ class Experiences extends Component {
       let bulletStyle
 
       // colors
-      let bulletColor = 'Green'
-      let triangleColor = '#506874'
-
+      let bulletColor = "Green"
+      let triangleColor = "#506874"
 
       if (index % 2 === 0) {
         // generate top & left placement for even boxes
@@ -61,14 +85,14 @@ class Experiences extends Component {
         })
         // generate bullets style & position (position from the box)
         bulletStyle = css({
-          position: 'absolute',
-          right: '-72px',
-          top: '-3px',
-          width: '12px',
-          height: '12px',
+          position: "absolute",
+          right: "-72px",
+          top: "-3px",
+          width: "12px",
+          height: "12px",
           background: bulletColor,
-          borderRadius: '70px',
-          content: '" "',
+          borderRadius: "70px",
+          content: '" "'
         })
 
         // combine default & even styles
@@ -92,14 +116,14 @@ class Experiences extends Component {
         })
         // generate bullets style & position (position from the box)
         bulletStyle = css({
-          position: 'absolute',
-          left: '-70px',
-          top: '-3px',
-          width: '12px',
-          height: '12px',
+          position: "absolute",
+          left: "-70px",
+          top: "-3px",
+          width: "12px",
+          height: "12px",
           background: bulletColor,
-          borderRadius: '70px',
-          content: '" "',
+          borderRadius: "70px",
+          content: '" "'
         })
         // combine default & odd styles
         myStyle = cx(commonStyle, oddStyle)
@@ -138,7 +162,7 @@ class Experiences extends Component {
           </Heading>
         </div>
         <div className="experiences-wrapper">
-          <span className="experiences-timeline"></span>
+          <span className="experiences-timeline" />
           {/* contains experience component */}
           {career}
         </div>
