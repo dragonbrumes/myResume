@@ -30,7 +30,7 @@ export class AddExperience extends Component {
     // défine axios URI
     const URI =
       process.env.NODE_ENV === "production"
-        ? "http://backend.lanteri.fr"
+        ? "https://backend.lanteri.fr"
         : "http://localhost:3000"
     console.log(URI)
 
