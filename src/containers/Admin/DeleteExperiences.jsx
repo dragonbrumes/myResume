@@ -19,8 +19,10 @@ class Experiences extends Component {
       process.env.NODE_ENV === "production"
         ? "https://backend.lanteri.fr"
         : "http://localhost:3000"
+    console.log(URI)
 
-    axios
+    http: axios
+      // .get("https://backend.lanteri.fr/experiences")
       .get(URI + "/experiences")
       .then(response => {
         this.setState({ experiences: response.data.data })

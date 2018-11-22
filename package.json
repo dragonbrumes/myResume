@@ -26,10 +26,12 @@
     "stylus": "^0.54.5"
   },
   "dependencies": {
+    "auth0-js": "^9.8.2",
     "axios": "^0.18.0",
     "babel-plugin-emotion": "^9.2.6",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
+    "dotenv": "^6.1.0",
     "emotion": "^9.2.6",
     "lodash": "^4.17.10",
     "prop-types": "^15.6.1",

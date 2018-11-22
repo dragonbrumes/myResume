@@ -1,11 +1,13 @@
 import React, { Component } from "react"
 import axios from "axios"
 import { Container, Header, Message, Icon, Form } from "semantic-ui-react"
+import auth0Client from "../../auth/Auth"
 
 import "./admin.styl"
 
 export class AddExperience extends Component {
   state = {
+    token: "",
     company: "",
     logo: "",
     spanTime: "",
@@ -14,6 +16,11 @@ export class AddExperience extends Component {
     order: "",
     message: undefined,
     inserted: undefined
+  }
+  componentDidMount = () => {
+    const token = auth0Client.getIdToken()
+    this.setState({ token })
+    // console.log(token)
   }
 
   // store in state
@@ -26,27 +33,25 @@ export class AddExperience extends Component {
   handleSubmit = event => {
     event.preventDefault()
     const { company, logo, spanTime, jobTitle, inCharge, order } = this.state
-    console.log(company, logo, spanTime, jobTitle, inCharge, order)
+    // console.log(company, logo, spanTime, jobTitle, inCharge, order)
     // défine axios URI
     const URI =
       process.env.NODE_ENV === "production"
         ? "https://backend.lanteri.fr"
         : "http://localhost:3000"
-    console.log(URI)
+
+    console.log("backend: ", URI)
 
     axios
-      .post(URI + "/experiences", {
-        company,
-        logo,
-        spanTime,
-        jobTitle,
-        inCharge,
-        order
-      })
+      .post(
+        URI + "/admin/experiences",
+        { company, logo, spanTime, jobTitle, inCharge, order },
+        { headers: { Authorization: `Bearer ${auth0Client.getIdToken()}` } }
+      )
       .then(response => {
-        console.log(response.data)
-        console.log(response.data.errors)
-        console.log(response.data.message)
+        // console.log(response.data)
+        // console.log(response.data.errors)
+        // console.log(response.data.message)
         // store the return message
         this.setState({
           message: response.data.message,
@@ -75,7 +80,7 @@ export class AddExperience extends Component {
       inserted
     } = this.state
     let { message } = this.state
-    // split the message if many
+    // split the messages if many
     if (message != undefined) {
       message = message.split(",").map((item, i) => {
         return <p key={i}>{item}</p>

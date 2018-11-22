@@ -6,6 +6,7 @@ import "./main.styl"
 
 class Main extends Component {
   render() {
+    // console.log(process.env.AUTH0_DOMAIN)
     return <Home />
   }
 }
