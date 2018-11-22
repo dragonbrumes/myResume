@@ -1,5 +1,14 @@
-Projet de base React
-====================
+## hosting
+
+Dans le fichier index.js pour gandi ou server.js pour autre,
+vérifier de na pas utiliser la variable process.env pour définir le port d'express. Il est est déjà utilisé par un autre process
+
+Ne pas oublier d'uploader le .env.production
+
+pour mettr en production sur gandi : yarn run build
+puis sftp dist dans re
+
+# Projet de base React
 
 Bienvenue dans ce modèle/template de projet React !
 
@@ -7,14 +16,14 @@ Bienvenue dans ce modèle/template de projet React !
 
 Récupérez une copie du modèle :
 
-``` sh
+```sh
 git clone git@github.com:O-clock-Hyperspace/React-modele.git
 cd React-modele
 ```
 
 Vous pouvez vérifier que tout fonctionne :
 
-``` sh
+```sh
 yarn # installer les dépendances du projet
 yarn start # compiler le projet avec Parcel
 # rdv sur http://localhost:1234/
@@ -22,11 +31,11 @@ yarn start # compiler le projet avec Parcel
 
 ## Utilisation pour démarrer sur un challenge
 
-En pratique, on peut se baser sur React-modele pour démarrer un *nouveau* projet, ou travailler sur un challenge.
+En pratique, on peut se baser sur React-modele pour démarrer un _nouveau_ projet, ou travailler sur un challenge.
 
 Il s'agit essentiellement de copier/coller les parties intéressantes du modèle dans le dossier du projet/challenge, sans écraser d'éventuels fichiers spécifiques :
 
-``` sh
+```sh
 # Exemple : après avoir cloné un challenge dans le dossier challenge/ :
 cd challenge
 cp -n ../React-modele/* .      # copie des fichiers non-cachés présents à la racine du modèle
@@ -40,7 +49,7 @@ yarn start
 
 ### Babel (ES6/JSX -> ES5)
 
-``` sh
+```sh
 yarn add --dev babel-preset-env # vocabulaire ES6 -> ES5 de base
 yarn add --dev babel-plugin-transform-class-properties
 yarn add --dev babel-plugin-transform-object-rest-spread
@@ -48,36 +57,37 @@ yarn add --dev babel-preset-react
 yarn add react react-dom
 ```
 
-* .babelrc
+- .babelrc
 
 ### ESLint
 
-``` sh
+```sh
 yarn add --dev eslint eslint-config-airbnb babel-eslint
 yarn add --dev eslint-import-resolver-alias
 yarn add --dev eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
 ```
 
-* eslintrc
-* .eslintignore
+- eslintrc
+- .eslintignore
 
 ### CSS (Stylus, PostCSS, Autoprefixer)
 
-``` sh
+```sh
 yarn add --dev stylus postcss-modules autoprefixer stylint
 ```
 
-* .stylintrc
-* .postcssrc
-* .browserslistrc
+- .stylintrc
+- .postcssrc
+- .browserslistrc
 
 ### Utilitaires
 
-``` sh
+```sh
 yarn add --dev babel-polyfill
 ```
+
 ## Outils pratiques
 
-* Extension React Dev Tools
-  * [pour Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-  * [pour Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+- Extension React Dev Tools
+  - [pour Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+  - [pour Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
