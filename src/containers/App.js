@@ -10,9 +10,11 @@ import {
   Footer,
   Login,
   AddExperience,
-  Callback,
-  Home
+  DeleteExperience,
+  DelExpProccess,
+  Callback
 } from "./index"
+
 import SecuredRoute from "../auth/SecuredRoute"
 import Auth from "../auth/Auth"
 // import AnimatedWrapper from "./AnimatedWrapper/AnimatedWrapper"
@@ -56,6 +58,12 @@ class App extends Component {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/admin/addexperience" component={AddExperience} />
+          <Route
+            exact
+            path="/admin/deleteexperience"
+            component={DeleteExperience}
+          />
+          <Route path="/admin/delexpproccess/:id" component={DelExpProccess} />
           {/* <SecuredRoute
             path="/admin/addexperience"
             component={AddExperience}

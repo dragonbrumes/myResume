@@ -23,7 +23,7 @@ export class AddExperience extends Component {
     // console.log(token)
   }
 
-  // store in state
+  // store form values in state
   handleChange = (e, { name, value }) =>
     this.setState({
       [name]: value
@@ -40,7 +40,7 @@ export class AddExperience extends Component {
         ? "https://backend.lanteri.fr"
         : "http://localhost:3000"
 
-    console.log("backend: ", URI)
+    // console.log("backend: ", URI)
 
     axios
       .post(

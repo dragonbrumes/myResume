@@ -88,6 +88,15 @@ class Nav extends Component {
               onClick={this.handleItemClick}
               className="nav-link"
             />
+            <Menu.Item
+              as={Link}
+              to="/admin/deleteexperience"
+              name="DeleteExperience"
+              active={activeItem === "DeleteExperience"}
+              content="Delete Experience"
+              onClick={this.handleItemClick}
+              className="nav-link"
+            />
             {/* <Menu.Item name="signout" active={activeItem === "signout"} content="Sign Out" onClick={auth0Client.signOut} className="nav-link" /> */}
             <Button
               size="mini"

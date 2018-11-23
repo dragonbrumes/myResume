@@ -12,6 +12,8 @@ import Callback from "../auth/Callback"
 import Home from "./Home/Home"
 //admin
 import AddExperience from "~/containers/Admin/AddExperience"
+import DeleteExperience from "~/containers/Admin/DeleteExperience"
+import DelExpProccess from "~/containers/Admin/DelExpProccess"
 
 export {
   Header,
@@ -21,6 +23,8 @@ export {
   Projects,
   Footer,
   AddExperience,
+  DeleteExperience,
+  DelExpProccess,
   Login,
   Callback,
   Home
