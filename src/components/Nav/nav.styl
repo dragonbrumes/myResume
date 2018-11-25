@@ -1,0 +1,25 @@
+@import '~/styles/vars'
+
+.nav
+    margin: auto
+    justify-content: center
+    &-link
+        font-size: 1em
+        font-family: 'Nunito', sans-serif;
+.ui.text.menu 
+    background-color: $navBackGround
+    box-shadow: $navShadow
+
+// links color
+.ui.text.menu .item
+    color:  $linkColor
+
+.ui.text.menu .item:hover
+    color:  $linkHoverColor
+    // text-decoration underline    
+
+.ui.text.menu .active.item
+    color: $linkActiveColor
+    border-bottom: 1px solid $linkActiveColor
+    font-weight bolder
+    background-color: $linkActiveBkgColor
