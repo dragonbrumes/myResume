@@ -1,5 +1,5 @@
 // ExperiencesModel.js
-var mongoose = require("mongoose");
+var mongoose = require("mongoose")
 // Setup schema
 var experiencesSchema = mongoose.Schema({
   company: {
@@ -25,13 +25,18 @@ var experiencesSchema = mongoose.Schema({
   order: {
     type: Number,
     require: [true]
+  },
+  logoImg: {
+    type: String,
+    data: Buffer,
+    require: [false]
   }
-});
+})
 // Export Experiences model
 var Experiences = (module.exports = mongoose.model(
   "Experiences",
   experiencesSchema
-));
+))
 module.exports.get = function(callback, limit) {
-  Experiences.find(callback).limit(limit);
-};
+  Experiences.find(callback).limit(limit)
+}
