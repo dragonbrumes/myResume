@@ -38,8 +38,8 @@ class Experiences extends Component {
     let duration = 1500
 
     // generating Experience component with data and Css with Emotion
-    // const career = careerData.map((experience, index) => {
-    const career = this.state.experiences.map((experience, index) => {
+    const career = careerData.map((experience, index) => {
+      // const career = this.state.experiences.map((experience, index) => {
       // increment duration animation timer for experiences boxes
       duration = duration + 500
 

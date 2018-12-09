@@ -73,7 +73,7 @@ class Nav extends Component {
           className="nav-link"
         />
 
-        {!auth0Client.isAuthenticated() && (
+        {/* {!auth0Client.isAuthenticated() && (
           <Menu.Item
             as={Link}
             to="/login"
@@ -83,7 +83,7 @@ class Nav extends Component {
             onClick={auth0Client.signIn}
             className="nav-link"
           />
-        )}
+        )} */}
         {/* <label className="nav-link">{auth0Client.getProfile().name}</label> */}
         {auth0Client.isAuthenticated() && (
           <React.Fragment>
