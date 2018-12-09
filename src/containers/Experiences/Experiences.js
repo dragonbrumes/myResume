@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 import { Transition, Container } from "semantic-ui-react"
 import styled, { cx, css } from "react-emotion"
+import ReactGA from "react-ga"
 
 import Heading from "~/components/commons/Heading"
 import Experience from "../../components/Experience/Experience"
@@ -29,6 +30,12 @@ class Experiences extends Component {
         // handle error
         console.log(error)
       })
+    this.initializeReactGA()
+  }
+  // Google Analytics
+  initializeReactGA = () => {
+    ReactGA.initialize("UA-137090-6")
+    ReactGA.pageview("/experiences")
   }
 
   render() {

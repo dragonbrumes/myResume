@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Heading from "~/components/commons/Heading"
 import { Transition, Container } from "semantic-ui-react"
 import styled, { cx, css } from "react-emotion"
+import ReactGA from "react-ga"
 
 import Experience from "../../components/Experience/Experience"
 import projectsData from "../../datas/projectsData"
@@ -9,6 +10,14 @@ import projectsData from "../../datas/projectsData"
 import "./experiences.styl"
 
 class Projects extends Component {
+  componentDidMount() {
+    this.initializeReactGA()
+  }
+  // Google Analytics
+  initializeReactGA = () => {
+    ReactGA.initialize("UA-137090-6")
+    ReactGA.pageview("/projects")
+  }
   render() {
     // map on career datas and sended to the exp component. setup even or odd for css
     // default increment values
@@ -38,9 +47,8 @@ class Projects extends Component {
       let bulletStyle
 
       // colors
-      let bulletColor = 'Green'
-      let triangleColor = '#506874'
-
+      let bulletColor = "Green"
+      let triangleColor = "#506874"
 
       if (index % 2 === 0) {
         // generate top & left placement for even boxes
@@ -61,14 +69,14 @@ class Projects extends Component {
         })
         // generate bullets style & position (position from the box)
         bulletStyle = css({
-          position: 'absolute',
-          right: '-72px',
-          top: '-3px',
-          width: '12px',
-          height: '12px',
+          position: "absolute",
+          right: "-72px",
+          top: "-3px",
+          width: "12px",
+          height: "12px",
           background: bulletColor,
-          borderRadius: '70px',
-          content: '" "',
+          borderRadius: "70px",
+          content: '" "'
         })
 
         // combine default & even styles
@@ -92,14 +100,14 @@ class Projects extends Component {
         })
         // generate bullets style & position (position from the box)
         bulletStyle = css({
-          position: 'absolute',
-          left: '-70px',
-          top: '-3px',
-          width: '12px',
-          height: '12px',
+          position: "absolute",
+          left: "-70px",
+          top: "-3px",
+          width: "12px",
+          height: "12px",
           background: bulletColor,
-          borderRadius: '70px',
-          content: '" "',
+          borderRadius: "70px",
+          content: '" "'
         })
         // combine default & odd styles
         myStyle = cx(commonStyle, oddStyle)
@@ -138,7 +146,7 @@ class Projects extends Component {
           </Heading>
         </div>
         <div className="experiences-wrapper">
-          <span className="experiences-timeline"></span>
+          <span className="experiences-timeline" />
           {/* contains experience component */}
           {career}
         </div>
