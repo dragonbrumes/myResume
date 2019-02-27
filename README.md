@@ -1,3 +1,15 @@
+## Start
+
+back : yarn start
+front :yarn parcel
+
+npm start lance le seveur et la lecture du dossier build
+npm parcel lance react en local suivant la branche
+
+## img
+
+pour ajouer une exp ou un projet ne pas oublier d'importer l'image à la liste des images dans l' index.js à la racine de assets
+
 ## hosting
 
 Dans le fichier index.js pour gandi ou server.js pour autre,
@@ -5,45 +17,19 @@ vérifier de na pas utiliser la variable process.env pour définir le port d'exp
 
 Ne pas oublier d'uploader le .env.production
 
-pour mettr en production sur gandi : yarn run build
+pour mettre en production sur gandi : yarn run build
 puis sftp dist dans re
 
-# Projet de base React
+pour mettre en prod sur Netlify simplement mettre à jour le github.
 
-Bienvenue dans ce modèle/template de projet React !
+# Branches
 
-## Première utilisation
+Master pour Gandi avec login
+Netlify pour Netlify sans le login
 
-Récupérez une copie du modèle :
+# BDD
 
-```sh
-git clone git@github.com:O-clock-Hyperspace/React-modele.git
-cd React-modele
-```
-
-Vous pouvez vérifier que tout fonctionne :
-
-```sh
-yarn # installer les dépendances du projet
-yarn start # compiler le projet avec Parcel
-# rdv sur http://localhost:1234/
-```
-
-## Utilisation pour démarrer sur un challenge
-
-En pratique, on peut se baser sur React-modele pour démarrer un _nouveau_ projet, ou travailler sur un challenge.
-
-Il s'agit essentiellement de copier/coller les parties intéressantes du modèle dans le dossier du projet/challenge, sans écraser d'éventuels fichiers spécifiques :
-
-```sh
-# Exemple : après avoir cloné un challenge dans le dossier challenge/ :
-cd challenge
-cp -n ../React-modele/* .      # copie des fichiers non-cachés présents à la racine du modèle
-cp -n ../React-modele/.* .     # copie des fichiers cachés présents à la racine du modèle
-cp -nr ../React-modele/src . # copie du dossier src/
-yarn
-yarn start
-```
+La bdd est sur mlab.com
 
 ## Configuration
 

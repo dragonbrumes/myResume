@@ -148,7 +148,10 @@ app.use(
   })
 )
 // unique cors for Gandi Hosting
-var corsOptions = { origin: "https://cv.lanteri.fr" }
+var corsOptions = {
+  // origin: "https://cv.lanteri.fr"
+  origin: "http://localhost:1234"
+}
 
 // Serve static assets
 // app.use(express.static(path.resolve(__dirname, "./", "dist")))
