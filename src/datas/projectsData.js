@@ -9,6 +9,14 @@ const projectsData = [
   },
   {
     // company: "O'Clock",
+    logo: "myinnerweather",
+    // spanTime: "2018",
+    jobTitle: "myinnerweather.com",
+    inCharge:
+      "Let you enter your mood to check your feeling across days. Made with ReactJS and Firebase. Librairies used : React-vis, Redux, Redux-form, Bulma, Moment. Link: www.myinnerweather.com"
+  },
+  {
+    // company: "O'Clock",
     logo: "maltaweather",
     // spanTime: "2018",
     jobTitle: "malta-weather.net",

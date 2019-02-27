@@ -1,5 +1,3 @@
-import React from "react"
-
 import baobaz from "./baobaz.png"
 import datasolution from "./datasolution.png"
 import cnav from "./cnav.png"
@@ -16,7 +14,23 @@ import stephane from "./project/stephane.lanteri.fr.png"
 import maltaweather from "./project/malta-weather.net.png"
 import whoiswhois from "./project/whois-whois.net.png"
 import memorygame from "./project/memory-game.png"
-
+import myinnerweather from "./project/myinnerweather.png"
 
 // exporting logos permit to have it in the dist directory
-export { baobaz, datasolution, cnav, malakoff, odyssee, assurOne, mtx, oclock, opquast, iscom, stephane, maltaweather, whoiswhois, memorygame  }
+export {
+  baobaz,
+  datasolution,
+  cnav,
+  malakoff,
+  odyssee,
+  assurOne,
+  mtx,
+  oclock,
+  opquast,
+  iscom,
+  stephane,
+  maltaweather,
+  whoiswhois,
+  memorygame,
+  myinnerweather
+}
