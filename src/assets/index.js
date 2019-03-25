@@ -15,6 +15,7 @@ import maltaweather from "./project/malta-weather.net.png"
 import whoiswhois from "./project/whois-whois.net.png"
 import memorygame from "./project/memory-game.png"
 import myinnerweather from "./project/myinnerweather.png"
+import felikitty from "./project/felikitty.png"
 
 // exporting logos permit to have it in the dist directory
 export {
@@ -32,5 +33,6 @@ export {
   maltaweather,
   whoiswhois,
   memorygame,
-  myinnerweather
+  myinnerweather,
+  felikitty
 }
