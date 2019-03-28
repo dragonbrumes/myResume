@@ -3,6 +3,7 @@ import axios from "axios"
 import { Transition, Container } from "semantic-ui-react"
 import styled, { cx, css } from "react-emotion"
 import ReactGA from "react-ga"
+import { Helmet } from "react-helmet"
 
 import Heading from "~/components/commons/Heading"
 import Experience from "../../components/Experience/Experience"
@@ -155,6 +156,12 @@ class Experiences extends Component {
 
     return (
       <div className="experiences">
+              <Helmet>
+          <meta charSet="utf-8" />
+          <title>Experiences Stephane Lanteri CV</title>
+          <meta name="description" content="Stephane Lanteri Experiences - online CV" />
+          <link rel="canonical" href="https://stephane.lanteri.fr/career" />
+        </Helmet>
         <div className="experiences-row1">
           <Heading tag="h1" className="experiences-h1">
             <Transition
